@@ -1,0 +1,18 @@
+ul {
+    margin: 0 auto; 
+    margin-top: 20em;
+    padding: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+   }
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+   
+a{  
+  text-align: center;
+  font-size: 48px;
+}

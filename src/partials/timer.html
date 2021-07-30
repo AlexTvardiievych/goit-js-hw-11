@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>goit-js-hw-11</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <a href="../index.html">Назад</a>
+    <div class="timer">
+        <div class="field">
+            <span class="value" data-days>0</span>
+            <span class="label">Days</span>
+        </div>
+
+        <div class="field">
+            <span class="value" data-hours>0</span>
+            <span class="label">Hours</span>
+        </div>
+        <div class="field">
+            <span class="value" data-minutes>0</span>
+            <span class="label">Minutes</span>
+        </div>
+        <div class="field">
+            <span class="value" data-seconds>0</span>
+            <span class="label">Seconds</span>
+        </div>
+    </div>
+
+
+
+    <div class="controls">
+        <input type="date" id="date-selector" class="datepicker-input" />
+        <div>
+            <button type="button" class="button-start" data-startcount>Start countdown</button>
+            <button type="button" class="button-stop" data-stopcount>Stop countdown</button>
+        </div>
+    </div>
+
+    <script src="../js/timer.js"></script>
+</body>
+
+</html>

@@ -1,2 +1,2 @@
-# goit-js-hw-11
-Homework 11
+# goit-js-hw-10-food-service
+homework 10
