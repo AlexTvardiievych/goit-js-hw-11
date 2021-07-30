@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"hbYO":[function(require,module,exports) {
 "use strict";require("../sass/promisify.scss");const e=e=>new Promise(t=>{setTimeout(()=>{t(e)},e)}),t=e=>console.log(`Fulfilled after ${e}ms`);e(2e3).then(t),e(1e3).then(t),e(1500).then(t);const n=[{name:"Mango",active:!0},{name:"Poly",active:!1},{name:"Ajax",active:!1}];function o(e,t){return new Promise(n=>{n(e.map(e=>e.name===t?{...e,active:!e.active}:e))})}o(n,"Mango").then(console.table),o(n,"Ajax").then(console.table);const a=(e,t)=>Math.floor(Math.random()*(t-e+1)+e),s=e=>{const t=a(200,500);return new Promise((n,o)=>{setTimeout(()=>{Math.random()>.3?n({id:e.id,time:t}):o(e.id)},t)})},i=({id:e,time:t})=>{console.log(`Transaction ${e} processed in ${t}ms`)},c=e=>{console.warn(`Error processing transaction ${e}. Please try again later.`)};s({id:70,amount:150}).then(i).catch(c),s({id:71,amount:230}).then(i).catch(c);
 },{"../sass/promisify.scss":"TSxE"}]},{},["hbYO"], null)
-//# sourceMappingURL=/goit-js-hw-10-food-service/promisify.b2ee958b.js.map
+//# sourceMappingURL=/goit-js-hw-11/promisify.b2ee958b.js.map
